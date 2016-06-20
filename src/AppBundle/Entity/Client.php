@@ -32,7 +32,7 @@ class Client
      * @Assert\Max(limit=75)
      */
     private $nom;
-
+/** test */
     /**
      * @ORM\Column(type="string", length=75)
      * @Assert\Type(type="string")
