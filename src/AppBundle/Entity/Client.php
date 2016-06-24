@@ -32,7 +32,7 @@ class Client
      * @Assert\Max(limit=75)
      */
     private $nom;
-/** test */
+
     /**
      * @ORM\Column(type="string", length=75)
      * @Assert\Type(type="string")
@@ -67,6 +67,9 @@ class Client
 
     /**
      * @ORM\Column(type="string", length=150)
+     * @Assert\NotBlank()
+     * @Assert\Min(limit=3)
+     * @Assert\Max(limit=75)
      */
     private $adresse;
 
